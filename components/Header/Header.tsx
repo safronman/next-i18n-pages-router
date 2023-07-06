@@ -3,6 +3,7 @@ import {LinkBlock} from './LinkBlock/LinkBlock';
 
 export const Header = () => (
     <Navbar>
+        <LinkBlock title={'/'}/>
         <LinkBlock title={'Characters'}/>
         <LinkBlock title={'Locations'}/>
         <LinkBlock title={'Episodes'}/>

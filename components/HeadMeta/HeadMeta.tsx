@@ -7,9 +7,7 @@ type PropsType = {
 export const HeadMeta = (props: PropsType) => {
   const { title } = props;
 
-  const description = title
-    ? `Rick and Morty ${title.toLowerCase()}`
-    : "Master class for IT-incubator";
+  const description = title ? `Rick and Morty ${title.toLowerCase()}` : "Master class for IT-incubator";
 
   return (
     <Head>

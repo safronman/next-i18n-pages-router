@@ -1,16 +1,16 @@
-import styled from 'styled-components';
-import {LinkBlock} from './LinkBlock/LinkBlock';
+import styled from "styled-components";
+import { LinkBlock } from "./LinkBlock/LinkBlock";
 
 export const Header = () => (
-    <Navbar>
-        <LinkBlock title={'/'}/>
-        <LinkBlock title={'Characters'}/>
-        <LinkBlock title={'Locations'}/>
-        <LinkBlock title={'Episodes'}/>
-        <LinkBlock title={'Test'}/>
-        <LinkBlock title={'Private'}/>
-    </Navbar>
-)
+  <Navbar>
+    <LinkBlock title={"/"} />
+    <LinkBlock title={"Characters"} />
+    <LinkBlock title={"Locations"} />
+    <LinkBlock title={"Episodes"} />
+    <LinkBlock title={"Test"} />
+    <LinkBlock title={"Private"} />
+  </Navbar>
+);
 
 const Navbar = styled.div`
   display: flex;
@@ -23,4 +23,4 @@ const Navbar = styled.div`
     flex-direction: column;
     text-align: center;
   }
-`
+`;

@@ -1,7 +1,6 @@
 import { PropsWithChildren } from "react";
 import styled from "styled-components";
-import {HeadMeta} from "../HeadMeta/HeadMeta";
-
+import { HeadMeta } from "../HeadMeta/HeadMeta";
 
 type PropsType = {
   title?: string;

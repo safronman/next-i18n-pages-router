@@ -1,5 +1,5 @@
-import {AxiosInstance} from 'axios';
+import { AxiosInstance } from "axios";
 
 export class NextJsApi {
-    constructor(private instance: AxiosInstance) {}
+  constructor(private instance: AxiosInstance) {}
 }

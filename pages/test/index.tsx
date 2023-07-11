@@ -2,8 +2,8 @@ import { GetStaticProps } from "next";
 import * as path from "path";
 import fs from "fs/promises";
 import { NextPageWithLayout } from "../_app";
-import { getLayout } from "../../components/Layout/BaseLayout/BaseLayout";
-import { PageWrapper } from "../../components/PageWrapper/PageWrapper";
+import { getLayout } from "components/Layout/BaseLayout/BaseLayout";
+import { PageWrapper } from "components/PageWrapper/PageWrapper";
 
 export const getStaticProps: GetStaticProps = async () => {
   const getParsedData = async (): Promise<{ title: string }> => {

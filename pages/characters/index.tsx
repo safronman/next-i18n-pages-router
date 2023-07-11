@@ -5,6 +5,7 @@ import { NextPageWithLayout } from "../_app";
 import { getContactsLayout } from "components/Layout/BaseLayout/BaseLayout";
 import { GetStaticProps } from "next";
 import dynamic from "next/dynamic";
+import { useTranslation } from "hooks/useTranslation";
 
 const CharacterCard = dynamic(() =>
   import("components/Card/CharacterCard/CharacterCard").then((mod) => mod.CharacterCard),
@@ -25,8 +26,11 @@ type PropsType = {
 };
 
 const Characters: NextPageWithLayout<PropsType> = ({ characters }) => {
+  const { t } = useTranslation();
+
   return (
     <PageWrapper>
+      <h1>{t.charactersPage.title}</h1>
       {characters.results.map((character) => {
         return <CharacterCard key={character.id} character={character} />;
       })}

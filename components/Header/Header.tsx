@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LinkBlock } from "./LinkBlock/LinkBlock";
+import { LangSelect } from "components/LangSelect/LangSelect";
 
 export const Header = () => (
   <Navbar>
@@ -9,6 +10,7 @@ export const Header = () => (
     <LinkBlock title={"Episodes"} />
     <LinkBlock title={"Test"} />
     <LinkBlock title={"Private"} />
+    <LangSelect />
   </Navbar>
 );
 
